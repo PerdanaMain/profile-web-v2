@@ -2,7 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #10120d;
-  font-family: "Poppins", sans-serif;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000; /* Warna dasar latar belakang */
+  overflow: hidden; /* Mencegah scroll */
+}
+
+#particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: radial-gradient(circle at 50% 50%, #111 0%, #000 80%); */
+  z-index: -1; /* Pastikan partikel berada di belakang konten */
+}
+
+.stars {
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
