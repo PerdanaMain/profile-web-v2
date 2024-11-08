@@ -8,12 +8,11 @@ html {
 }
 
 #particles {
-  position: absolute;
+  position: fixed; /* Ubah ke fixed agar mencakup seluruh halaman */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: radial-gradient(circle at 50% 50%, #111 0%, #000 80%); */
   z-index: -1; /* Pastikan partikel berada di belakang konten */
 }
 
@@ -40,4 +39,20 @@ html {
   :root {
     --radius: 0.5rem;
   }
+}
+
+@keyframes rocketBounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.rocket-bounce {
+  animation: rocketBounce 1s ease-in-out infinite;
 }

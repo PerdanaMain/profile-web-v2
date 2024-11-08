@@ -14,6 +14,11 @@ export default {
       colors: {
         primary: "#BD904D",
         secondary: "#ECDFCC",
+        main: "#697565",
+      },
+      backgroundColor: {
+        primary: "#BD904D",
+        secondary: "#697565",
       },
       borderRadius: {
         lg: "var(--radius)",

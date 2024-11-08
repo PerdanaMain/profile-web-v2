@@ -26,7 +26,7 @@ const Header = () => {
         </div>
         <div className="lg:hidden mx-start">
           <a href="/">
-            <img src={Rocket} alt="Rocket Pict" className="w-10" />
+            <img src={Rocket} alt="Rocket Pict" className="w-12" />
           </a>
         </div>
         <div className="lg:hidden mx-auto">
@@ -43,7 +43,7 @@ const Header = () => {
 
       {/* Dropdown menu untuk layar kecil */}
       {menuOpen && (
-        <div className="lg:hidden bg-[#2A2F28] text-[#ECDFCC] mt-2 p-3 rounded-b-[20px]">
+        <div className="lg:hidden bg-[#2A2F28] text-[#ECDFCC] mt-2 p-3 rounded-b-[20px] text-center">
           <a href="/" className="block mb-2 hover:text-primary">
             Home
           </a>

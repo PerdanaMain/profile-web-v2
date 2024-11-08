@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const particlesRef = useRef(null);
@@ -45,6 +46,8 @@ const Home = () => {
         <Header />
         <Hero />
         <Projects />
+        <div className="border-[1px] opacity-50 border-main" />
+        <Footer />
       </div>
     </div>
   );
