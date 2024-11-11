@@ -1,11 +1,9 @@
 import { useEffect, useRef } from "react";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import Techstacks from "../components/TechStacks";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Projects from "../components/Projects";
 
-const Home = () => {
+const Project = () => {
   const particlesRef = useRef(null);
 
   // Fungsi untuk membuat elemen bintang secara dinamis
@@ -45,9 +43,7 @@ const Home = () => {
           {createStars()}
         </div>
         <Header />
-        <Hero />
-        <Techstacks />
-        <Projects isPage={false} />
+        <Projects isPage={true} />
         <div className="border-[1px] opacity-50 border-main" />
         <Footer />
       </div>
@@ -55,4 +51,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Project;

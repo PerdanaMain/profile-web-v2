@@ -5,7 +5,7 @@ export const menulists = [
   },
   {
     title: "About",
-    link: "/about",
+    link: "/#",
   },
   {
     title: "Project",

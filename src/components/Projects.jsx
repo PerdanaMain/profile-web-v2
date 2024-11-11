@@ -5,27 +5,12 @@ import {
   Image,
   CardFooter,
 } from "@nextui-org/react";
-
 import ArrowUp from "../assets/icons/ArrowCircleUpRight.png";
+import { projects } from "../utils/ProjectLists";
 
-const Projects = () => {
-  const cardList = [
-    {
-      title: "Orange",
-      img: "https://nextui.org/images/hero-card-complete.jpeg",
-      price: "$5.50",
-    },
-    {
-      title: "Tangerine",
-      img: "https://nextui.org/images/hero-card-complete.jpeg",
-      price: "$3.00",
-    },
-    {
-      title: "Raspberry",
-      img: "https://nextui.org/images/hero-card-complete.jpeg",
-      price: "$10.00",
-    },
-  ];
+// eslint-disable-next-line react/prop-types
+const Projects = ({ isPage }) => {
+  const cardLists = !isPage ? projects.slice(0, 3) : projects;
 
   return (
     <div className="container mx-auto my-24 px-4 text-center">
@@ -40,14 +25,14 @@ const Projects = () => {
 
       {/* Grid Responsif */}
       <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 my-10">
-        {cardList.map((item, index) => (
+        {cardLists.map(({ title }, index) => (
           <Card
             className="py-4 bg-transparent justify-center border-[1px] border-main gap-2"
             key={index}
           >
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
               <p className="text-primary text-2xl uppercase font-bold">
-                {item.title}
+                {title}
               </p>
               <small className="text-secondary text-justify my-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
@@ -58,7 +43,7 @@ const Projects = () => {
             </CardHeader>
             <CardBody className="overflow-visible py-2">
               <Image
-                alt="Card background"
+                alt={`${title} image`}
                 className="object-cover rounded-xl w-full h-auto max-h-screen bg-cover bg-center"
                 src="https://nextui.org/images/hero-card-complete.jpeg"
               />
@@ -78,11 +63,13 @@ const Projects = () => {
           </Card>
         ))}
       </div>
-      <div className="flex justify-between items-center">
-        <button className="bg-transparent border-[1px] border-main text-white px-4 py-2 rounded-lg hover:bg-primary">
-          See More Projects
-        </button>
-      </div>
+      {!isPage && (
+        <div className="flex justify-between items-center">
+          <button className="bg-transparent border-[1px] border-main text-white px-4 py-2 rounded-lg hover:bg-primary">
+            See More Projects
+          </button>
+        </div>
+      )}
     </div>
   );
 };
