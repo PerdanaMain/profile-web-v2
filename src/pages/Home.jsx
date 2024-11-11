@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import Techstacks from "../components/TechStacks";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -45,6 +46,7 @@ const Home = () => {
         </div>
         <Header />
         <Hero />
+        <Techstacks />
         <Projects />
         <div className="border-[1px] opacity-50 border-main" />
         <Footer />
