@@ -11,15 +11,15 @@ const Hero = () => {
           <img
             src={Rocket}
             alt="Rocket Pict"
-            className="w-12 md:w-16 lg:w-20 animate-bounce"
+            className="w-12 md:w-16 lg:w-20 mt-[-10px] rocket-bounce"
           />
-          <h1 className="text-primary text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="text-primary text-4xl md:text-5xl lg:text-6xl font-bold text-center">
             Perdana Main
           </h1>
           <img
             src={Rocket}
             alt="Rocket Pict"
-            className="w-12 md:w-16 lg:w-20 animate-bounce"
+            className="w-12 md:w-16 lg:w-20 mt-[-10px] rocket-bounce"
           />
         </div>
 
