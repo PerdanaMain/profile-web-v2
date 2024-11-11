@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Hamburger from "../assets/icons/List.png";
 import Rocket from "../assets/icons/rocket.png";
-import { menulists } from "../utils/MenuLists";
+import { menulists } from "../libs/MenuLists";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

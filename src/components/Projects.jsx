@@ -6,7 +6,7 @@ import {
   CardFooter,
 } from "@nextui-org/react";
 import ArrowUp from "../assets/icons/ArrowCircleUpRight.png";
-import { projects } from "../utils/ProjectLists";
+import { projects } from "../libs/ProjectLists";
 
 // eslint-disable-next-line react/prop-types
 const Projects = ({ isPage }) => {
