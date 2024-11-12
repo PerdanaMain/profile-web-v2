@@ -54,7 +54,7 @@ const Projects = ({ isPage }) => {
               <div className="flex justify-between items-center">
                 <button
                   className="bg-transparent text-secondary px-4 py-2 rounded-lg hover:underline hover:underline-offset-4 hover:decoration-[3px] hover:decoration-[#BD904D] flex items-center group"
-                  onClick={() => navigate(`project/${slug}`)}
+                  onClick={() => navigate(`/project/${slug}`)}
                 >
                   <span>See More</span>
                   <img
