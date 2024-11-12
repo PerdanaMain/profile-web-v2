@@ -42,7 +42,7 @@ const TechStacks = () => {
       >
         {stacks.map((stack, index) => (
           <SwiperSlide key={index}>
-            <Card className="py-4 bg-main border-[1px] justify-center">
+            <Card className="py-4 bg-[#F4ECE1] border-[1px] justify-center opacity-80">
               <CardBody className="overflow-visible items-center">
                 <Image
                   alt="Card background"

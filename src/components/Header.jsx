@@ -7,7 +7,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="container bg-[#2A2F28] rounded-[20px]">
+    <div className="container bg-[#2A2F28] rounded-[20px] px-5 sm:px-3">
       <nav className="flex justify-between lg:justify-center items-center mt-10 p-3 text-[#ECDFCC]">
         <div className="lg:hidden">
           <a href="/">

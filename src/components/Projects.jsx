@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  Image,
-  CardFooter,
-} from "@nextui-org/react";
+import { Card, CardBody, CardHeader, CardFooter } from "@nextui-org/react";
 import ArrowUp from "../assets/icons/ArrowCircleUpRight.png";
 import { projects } from "../libs/ProjectLists";
 import { useNavigate } from "react-router-dom";
@@ -41,17 +35,34 @@ const Projects = ({ isPage }) => {
                 libero labore perspiciatis minima eligendi, exercitationem
                 consequuntur vel porro beatae tempore.
               </small>
-              <h4 className="font-bold text-large">Frontend Radio</h4>
+              <div className="flex justify-center space-x-4 mt-3">
+                <a
+                  href="https://github.com/perdanamain"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center text-secondary hover:underline hover:underline-offset-4"
+                >
+                  <span className="text-md">perdanamain</span>
+                </a>
+                <a
+                  href="https://linkedin.com/in/firmanperdana"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center text-secondary hover:underline hover:underline-offset-4"
+                >
+                  <span className="text-md">/in/firmanperdana</span>
+                </a>
+              </div>
             </CardHeader>
-            <CardBody className="overflow-visible py-2">
-              <Image
-                alt={`${title} image`}
-                className="object-cover rounded-xl w-full h-auto max-h-screen bg-cover bg-center"
+            <CardBody className="overflow-visible">
+              <img
                 src={thumbnail}
+                alt="Project showcase"
+                className="block object-cover w-full max-w-full max-h-[200px] mx-auto rounded-xl shadow-lg"
               />
             </CardBody>
             <CardFooter>
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center mt-[-20px]">
                 <button
                   className="bg-transparent text-secondary px-4 py-2 rounded-lg hover:underline hover:underline-offset-4 hover:decoration-[3px] hover:decoration-[#BD904D] flex items-center group"
                   onClick={() => navigate(`/project/${slug}`)}
@@ -70,7 +81,10 @@ const Projects = ({ isPage }) => {
       </div>
       {!isPage && (
         <div className="flex justify-between items-center">
-          <button className="bg-transparent border-[1px] border-main text-white px-4 py-2 rounded-lg hover:bg-primary">
+          <button
+            className="bg-transparent border-[1px] border-main text-white px-4 py-2 rounded-lg hover:bg-primary"
+            onClick={() => navigate("/project")}
+          >
             See More Projects
           </button>
         </div>

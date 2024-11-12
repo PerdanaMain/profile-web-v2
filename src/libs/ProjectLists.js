@@ -6,6 +6,11 @@ export const projects = [
     image: "https://nextui.org/images/hero-card-complete.jpeg",
     slug: "project-1",
     thumbnail: "https://nextui.org/images/hero-card-complete.jpeg",
+    techStacks: [
+      {
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original-wordmark.svg",
+      },
+    ],
   },
   {
     title: "Project 2",
@@ -14,6 +19,11 @@ export const projects = [
     image: "https://nextui.org/images/hero-card-complete.jpeg",
     slug: "project-2",
     thumbnail: "https://nextui.org/images/hero-card-complete.jpeg",
+    techStacks: [
+      {
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original-wordmark.svg",
+      },
+    ],
   },
   {
     title: "Project 3",
@@ -22,6 +32,11 @@ export const projects = [
     image: "https://nextui.org/images/hero-card-complete.jpeg",
     slug: "project-3",
     thumbnail: "https://nextui.org/images/hero-card-complete.jpeg",
+    techStacks: [
+      {
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original-wordmark.svg",
+      },
+    ],
   },
   {
     title: "Project 4",
@@ -30,6 +45,11 @@ export const projects = [
     image: "https://nextui.org/images/hero-card-complete.jpeg",
     slug: "project-4",
     thumbnail: "https://nextui.org/images/hero-card-complete.jpeg",
+    techStacks: [
+      {
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original-wordmark.svg",
+      },
+    ],
   },
   {
     title: "Project 5",
@@ -38,6 +58,11 @@ export const projects = [
     image: "https://nextui.org/images/hero-card-complete.jpeg",
     slug: "project-5",
     thumbnail: "https://nextui.org/images/hero-card-complete.jpeg",
+    techStacks: [
+      {
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original-wordmark.svg",
+      },
+    ],
   },
   {
     title: "Project 6",
@@ -46,6 +71,11 @@ export const projects = [
     image: "https://nextui.org/images/hero-card-complete.jpeg",
     slug: "project-6",
     thumbnail: "https://nextui.org/images/hero-card-complete.jpeg",
+    techStacks: [
+      {
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original-wordmark.svg",
+      },
+    ],
   },
   {
     title: "Project 7",
@@ -54,6 +84,11 @@ export const projects = [
     image: "https://nextui.org/images/hero-card-complete.jpeg",
     slug: "project-7",
     thumbnail: "https://nextui.org/images/hero-card-complete.jpeg",
+    techStacks: [
+      {
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original-wordmark.svg",
+      },
+    ],
   },
   {
     title: "Project 8",
@@ -62,6 +97,11 @@ export const projects = [
     image: "https://nextui.org/images/hero-card-complete.jpeg",
     slug: "project-8",
     thumbnail: "https://nextui.org/images/hero-card-complete.jpeg",
+    techStacks: [
+      {
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original-wordmark.svg",
+      },
+    ],
   },
   {
     title: "Project 9",
@@ -70,6 +110,11 @@ export const projects = [
     image: "https://nextui.org/images/hero-card-complete.jpeg",
     slug: "project-9",
     thumbnail: "https://nextui.org/images/hero-card-complete.jpeg",
+    techStacks: [
+      {
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original-wordmark.svg",
+      },
+    ],
   },
   {
     title: "Project 10",
@@ -78,5 +123,10 @@ export const projects = [
     image: "https://nextui.org/images/hero-card-complete.jpeg",
     slug: "project-10",
     thumbnail: "https://nextui.org/images/hero-card-complete.jpeg",
+    techStacks: [
+      {
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original-wordmark.svg",
+      },
+    ],
   },
 ];

@@ -45,36 +45,34 @@ const Hero = () => {
           Resume
         </a>
       </div>
-      <div className="my-5 justify">
-        <div className="flex justify-center space-x-4">
-          <a
-            href="https://github.com/perdanamain"
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center text-secondary hover:underline hover:underline-offset-4"
-          >
-            <img
-              src={GitHubLogo}
-              alt="GitHub Logo"
-              className="w-6 mr-2 max-h-10"
-            />
-            <span className="text-md">perdanamain</span>
-          </a>
-          <span className="text-main">|</span>
-          <a
-            href="https://linkedin.com/in/firmanperdana"
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center text-secondary hover:underline hover:underline-offset-4"
-          >
-            <img
-              src={LinkedInLogo}
-              alt="GitHub Logo"
-              className="w-6 mr-2 max-h-10"
-            />
-            <span className="text-md">/in/firmanperdana</span>
-          </a>
-        </div>
+      <div className="flex justify-center space-x-4 my-5">
+        <a
+          href="https://github.com/perdanamain"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center text-secondary hover:underline hover:underline-offset-4"
+        >
+          <img
+            src={GitHubLogo}
+            alt="GitHub Logo"
+            className="w-6 mr-2 max-h-10"
+          />
+          <span className="text-md">perdanamain</span>
+        </a>
+        <span className="text-main">|</span>
+        <a
+          href="https://linkedin.com/in/firmanperdana"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center text-secondary hover:underline hover:underline-offset-4"
+        >
+          <img
+            src={LinkedInLogo}
+            alt="GitHub Logo"
+            className="w-6 mr-2 max-h-10"
+          />
+          <span className="text-md">/in/firmanperdana</span>
+        </a>
       </div>
     </div>
   );
