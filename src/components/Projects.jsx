@@ -7,10 +7,12 @@ import {
 } from "@nextui-org/react";
 import ArrowUp from "../assets/icons/ArrowCircleUpRight.png";
 import { projects } from "../libs/ProjectLists";
+import { useNavigate } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 const Projects = ({ isPage }) => {
   const cardLists = !isPage ? projects.slice(0, 3) : projects;
+  const navigate = useNavigate();
 
   return (
     <div className="container mx-auto my-24 px-4 text-center">
@@ -25,7 +27,7 @@ const Projects = ({ isPage }) => {
 
       {/* Grid Responsif */}
       <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 my-10">
-        {cardLists.map(({ title }, index) => (
+        {cardLists.map(({ title, slug, thumbnail }, index) => (
           <Card
             className="py-4 bg-transparent justify-center border-[1px] border-main gap-2"
             key={index}
@@ -45,12 +47,15 @@ const Projects = ({ isPage }) => {
               <Image
                 alt={`${title} image`}
                 className="object-cover rounded-xl w-full h-auto max-h-screen bg-cover bg-center"
-                src="https://nextui.org/images/hero-card-complete.jpeg"
+                src={thumbnail}
               />
             </CardBody>
             <CardFooter>
               <div className="flex justify-between items-center">
-                <button className="bg-transparent text-secondary px-4 py-2 rounded-lg hover:underline hover:underline-offset-4 hover:decoration-[3px] hover:decoration-[#BD904D] flex items-center group">
+                <button
+                  className="bg-transparent text-secondary px-4 py-2 rounded-lg hover:underline hover:underline-offset-4 hover:decoration-[3px] hover:decoration-[#BD904D] flex items-center group"
+                  onClick={() => navigate(`project/${slug}`)}
+                >
                   <span>See More</span>
                   <img
                     src={ArrowUp}

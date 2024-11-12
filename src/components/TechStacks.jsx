@@ -39,23 +39,12 @@ const TechStacks = () => {
 
   return (
     <div className="container mx-auto text-center my-24 px-4">
-      <h2 className="text-5xl font-semibold text-primary mb-3">
-        Technical Stacks
-      </h2>
-      <p className="text-secondary mb-20">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam optio est
-        iusto tenetur distinctio commodi quibusdam corporis quas, excepturi
-        dolor.
-      </p>
-
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]} // tambahkan Autoplay di sini
         spaceBetween={50}
         slidesPerView={3}
         loop={true} // memungkinkan loop tanpa henti
         autoplay={{ delay: 1500, disableOnInteraction: false }} // konfigurasi autoplay
-        pagination={{ clickable: false }}
-        scrollbar={{ draggable: true }}
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -70,12 +59,10 @@ const TechStacks = () => {
             spaceBetween: 40,
           },
         }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
       >
         {stacks.map((stack, index) => (
           <SwiperSlide key={index}>
-            <Card className="py-4 bg-[#2A2F28] border[1px] justify-center">
+            <Card className="py-4 bg-main border[1px] justify-center">
               <CardBody className="overflow-visible items-center">
                 <Image
                   alt="Card background"
