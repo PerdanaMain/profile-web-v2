@@ -1,6 +1,7 @@
 import Home from "../pages/Home.jsx";
 import Project from "../pages/Project.jsx";
 import DetailProject from "../pages/DetailProject.jsx";
+import NotFound from "../pages/NotFound.jsx";
 
 const router = [
   {
@@ -14,6 +15,14 @@ const router = [
   {
     path: "/project/:slug",
     element: <DetailProject />,
+  },
+  {
+    path: "/404",
+    element: <NotFound />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ];
 
