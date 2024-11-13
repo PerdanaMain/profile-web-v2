@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Hamburger from "../assets/icons/List.png";
 import Rocket from "../assets/icons/rocket.png";
+
 import { menulists } from "../libs/MenuLists";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="container bg-[#2A2F28] rounded-[20px] px-5 sm:px-3">
@@ -38,7 +41,8 @@ const Header = () => {
         <div className="lg:hidden bg-[#2A2F28] text-[#ECDFCC] mt-2 p-3 rounded-b-[20px] text-center">
           {menulists.map((item, index) => (
             <a
-              href={item.link}
+              role="button"
+              onClick={() => navigate(item.link)}
               className="block my-2 hover:text-primary"
               key={index}
             >
