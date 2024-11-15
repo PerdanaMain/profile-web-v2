@@ -1,49 +1,17 @@
-import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import nodejs from "../assets/icons/akar-icons_node-fill.png";
+import laravel from "../assets/icons/flowbite_laravel-solid.png";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import laravel from "../assets/icons/flowbite_laravel-solid.png";
-import nodejs from "../assets/icons/akar-icons_node-fill.png";
+import Stars from "../components/Stars";
 
 const DetailProject = () => {
-  const particlesRef = useRef(null);
   const navigate = useNavigate();
-
-  // Fungsi untuk membuat elemen bintang secara dinamis
-  const createStars = () => {
-    const stars = [];
-    for (let i = 0; i < 100; i++) {
-      const style = {
-        top: `${Math.random() * 100}vh`,
-        left: `${Math.random() * 100}vw`,
-      };
-      stars.push(<div key={i} className="stars" style={style}></div>);
-    }
-    return stars;
-  };
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      const particles = particlesRef.current;
-      const x = (e.clientX / window.innerWidth) * 100;
-      const y = (e.clientY / window.innerHeight) * 100;
-
-      particles.style.transform = `translate(-${x / 20}%, -${y / 20}%)`;
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
 
   return (
     <div className="relative min-h-screen overflow-hidden">
       <div className="container mx-auto relative z-10">
-        <div id="particles" ref={particlesRef} className="pointer-events-none">
-          {createStars()}
-        </div>
+        <Stars />
         <Header />
 
         <div className="my-10 px-5 sm:px-1">
