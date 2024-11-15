@@ -4,12 +4,13 @@ import laravel from "../assets/icons/flowbite_laravel-solid.png";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Stars from "../components/Stars";
+import MainLayout from "../containers/MainLayout";
 
 const DetailProject = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <MainLayout>
       <div className="container mx-auto relative z-10">
         <Stars />
         <Header />
@@ -128,7 +129,7 @@ const DetailProject = () => {
         <div className="border-t border-main opacity-50 my-8" />
         <Footer />
       </div>
-    </div>
+    </MainLayout>
   );
 };
 

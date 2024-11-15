@@ -4,11 +4,11 @@ import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Stars from "../components/Stars";
 import Techstacks from "../components/TechStacks";
+import MainLayout from "../containers/MainLayout";
 
 const Home = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden">
-      {/* Elemen latar belakang bintang */}
+    <MainLayout>
       <div className="container mx-auto relative z-10">
         <Stars />
 
@@ -19,7 +19,7 @@ const Home = () => {
         <div className="border-[1px] opacity-50 border-main" />
         <Footer />
       </div>
-    </div>
+    </MainLayout>
   );
 };
 

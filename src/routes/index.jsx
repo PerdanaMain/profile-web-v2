@@ -3,6 +3,7 @@ import Project from "../pages/Project.jsx";
 import DetailProject from "../pages/DetailProject.jsx";
 import NotFound from "../pages/NotFound.jsx";
 import Dashboard from "../pages/Admin/Dashboard.jsx";
+import Login from "../pages/auth/Login.jsx";
 
 const router = [
   {
@@ -28,6 +29,10 @@ const router = [
   {
     path: "/dashboard",
     element: <Dashboard />,
+  },
+  {
+    path: "/sign-in",
+    element: <Login />,
   },
 ];
 

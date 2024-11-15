@@ -1,9 +1,10 @@
 import NotFoundImg from "../assets/images/not-found.png";
 import Stars from "../components/Stars";
+import MainLayout from "../containers/MainLayout";
 
 const NotFound = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-dark">
+    <MainLayout>
       <div className="container mx-auto relative z-10">
         <Stars />
 
@@ -23,7 +24,7 @@ const NotFound = () => {
           />
         </div>
       </div>
-    </div>
+    </MainLayout>
   );
 };
 
